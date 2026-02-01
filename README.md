@@ -1,32 +1,32 @@
-# CIS_5_Lab_4_Winter_2026
+# CIS 5 Lab 4 – Functions & Passing Methods
 
-Functions & Passing Methods
+## Lab Goal
+Manage 5 student scores using different parameter passing methods in C++.
 
-Goal: Manage 5 student scores using different parameter passing
-Array (hard-coded):  {65, 82, 90, 45, 78} -> use these numbers for the lab
+## Student Scores
+Original scores: `{65, 82, 90, 45, 78}`
 
-**Create your own main.cpp**
+## Functions Implemented
+1. `totalScore(const int arr[], int size)` – calculates sum of scores (pass by const array).  
+2. `averageScore(int sum, int size)` – calculates average (pass by value).  
+3. `addExtraPoints(int arr[], int size, int bonus = 5)` – adds bonus points (pass by reference).  
+4. `topScore(const int* arr, int size)` – finds the highest score (pass by pointer).  
+5. `passedCount(const int arr[], int size)` – counts students with scores ≥70 (pass by const array).  
 
-Tasks:
+## Main Program
+- Shows original scores  
+- Calculates sum and average  
+- Adds bonus points and displays updated scores  
+- Finds highest score  
+- Counts number of students who passed
 
-1. int calculateSum(const int arr[], int size)           // const ref/pointer
-2. double getAverage(int sum, int size)                  // by value
-3. void addBonus(int arr[], int size, int bonus = 5)     // ref or pointer → modifies original
-4. int findHighest(const int* arr, int size)             // pointer, return value
-5. int countPassed(const int arr[], int size)            // const ref/pointer, ≥70
+## Key Notes
+- Pass by value does **not** change the original array.  
+- Pass by reference/pointer **modifies** the array.  
+- Using `const` prevents accidental changes when only reading values.
 
-In main():
-- Show original scores
-- Show sum & average
-- Add bonus → show new scores
-- Show highest & number passed
+## Lab 4 Video Walkthrough
+video2226981647
+Video link
+https://youtu.be/VSr2wpRWhlk
 
-Key Questions to Answer in Comments / Video:
-- What stays unchanged when using pass by value?
-- How does pass by reference change the original array?
-- Why use const with pointers/references when reading only?
-
-Deliverable:
-- main.cpp
-- 1–2 min video explaining logic + demo run
-- Upload to GitHub (fork this repo first)
