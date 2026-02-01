@@ -1,4 +1,4 @@
-#include <iostream>  // <-- Make sure the # is here
+#include <iostream>  
 using namespace std;
 
 int totalScore(const int arr[], int count) {
