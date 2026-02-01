@@ -1,6 +1,5 @@
-include <iostream>
+#include <iostream>  // <-- Make sure the # is here
 using namespace std;
-
 
 int totalScore(const int arr[], int count) {
     int sum = 0;
@@ -14,13 +13,11 @@ double averageScore(int sum, int count) {
     return static_cast<double>(sum) / count;
 }
 
-
 void addExtraPoints(int arr[], int count, int bonus = 5) {
     for (int i = 0; i < count; i++) {
         arr[i] += bonus;
     }
 }
-
 
 int topScore(const int* arr, int count) {
     int highest = arr[0];
@@ -31,7 +28,6 @@ int topScore(const int* arr, int count) {
     }
     return highest;
 }
-
 
 int passedCount(const int arr[], int count) {
     int passed = 0;
